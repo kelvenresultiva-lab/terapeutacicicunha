@@ -195,7 +195,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <style id="sq-header">
 .sq-brand__text{display:flex;flex-direction:column;gap:6px;}
 .sq-brand__sub{font-family:Inter,sans-serif;font-size:11px;font-weight:500;letter-spacing:.32em;text-transform:uppercase;color:#6B8984;white-space:nowrap;}
-@media (max-width:1024px){.sq-brand--header .sq-brand__sub{display:none;}}
+
 @media (min-width:1025px){
 .elementor-24 .elementor-element.elementor-element-11648f48{background:#fff !important;border-radius:0 !important;border-top:1px solid rgba(47,47,77,.07);border-bottom:1px solid rgba(47,47,77,.10);box-shadow:0 22px 40px -28px rgba(36,58,85,.38) !important;--padding-top:16px;--padding-bottom:16px;padding-top:16px !important;padding-bottom:16px !important;}
 .elementor-24 .elementor-element.elementor-element-11648f48 > .e-con-inner{max-width:1240px !important;align-items:center;padding-top:0 !important;padding-bottom:0 !important;}
@@ -215,6 +215,17 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 </style>
 <style id="sq-temas-solido">#dores::before,#dores > .elementor-motion-effects-container{display:none !important;background-image:none !important;}#dores{background-image:none !important;background-color:#52708F !important;}</style>
 <style id="sq-temas-tags">#dores p > span[style*="border-radius: 999px"]{background:#fff !important;color:#34435A !important;border:1px solid #fff !important;font-weight:400 !important;margin:4px 3px;box-shadow:0 6px 14px -10px rgba(0,0,0,.45);}</style>
+<style id="sq-brand-align">@media (min-width:1025px){
+.sq-brand--header .sq-brand__text{align-items:flex-start !important;text-align:left !important;}
+.sq-brand--header .sq-brand__name,.sq-brand--header .sq-brand__sub{text-align:left !important;align-self:flex-start;}
+}</style>
+<style id="sq-brand-mobile">@media (max-width:1024px){
+.sq-brand--header{gap:10px;}
+.sq-brand--header .sq-brand__emblem{height:40px !important;}
+.sq-brand--header .sq-brand__text{display:flex;flex-direction:column;align-items:flex-start;gap:4px;text-align:left;}
+.sq-brand--header .sq-brand__name{font-size:24px !important;line-height:1;}
+.sq-brand--header .sq-brand__sub{display:block !important;font-size:8px;letter-spacing:.22em;font-weight:600;text-align:left;}
+}</style>
 </head>
 <body class="home wp-singular page-template page-template-elementor_canvas page page-id-24 wp-embed-responsive wp-theme-hello-elementor hello-elementor-default elementor-default elementor-template-canvas elementor-kit-10 elementor-page elementor-page-24">
 	
